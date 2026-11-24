@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopPulse — Shopify Pixel, App &amp; Catalog Inspector</title>
+    <meta
+      name="description"
+      content="Inspect any Shopify store in 1 click: detect 12 ad pixels and IDs, 20+ installed apps, theme, Shopify Plus signals, and export product catalogs to CSV or JSON."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0f172a;
+        --card: #1e293b;
+        --border: #334155;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --accent: #10b981;
+        --accent-bright: #34d399;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px; }
+      .badge {
+        display: inline-block;
+        background: #064e3b;
+        color: #6ee7b7;
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      h1 { font-size: 2.2rem; margin: 14px 0 10px; line-height: 1.2; }
+      p.lead { color: var(--muted); font-size: 1.1rem; max-width: 680px; }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin: 32px 0;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+      }
+      .card h2 { font-size: 1.05rem; margin: 0 0 8px; color: var(--accent-bright); }
+      .card p, .card li { color: #cbd5e1; font-size: 0.95rem; }
+      ul { padding-left: 18px; margin: 8px 0 0; }
+      .pricing { margin-top: 32px; }
+      .price-tag { font-size: 1.8rem; font-weight: 700; color: var(--accent-bright); margin: 6px 0; }
+      a { color: var(--accent-bright); }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <span class="badge">Chrome Extension • Manifest V3 • Read-Only</span>
+      <h1>ShopPulse — Shopify Pixel, App &amp; Catalog Inspector</h1>
+      <p class="lead">
+        Audit any Shopify storefront in one click directly in your browser. Detect active ad pixels and tracking IDs,
+        installed Shopify apps, theme details, Shopify Plus signals, and export product catalogs to CSV or JSON.
+      </p>
+
+      <section class="grid">
+        <div class="card">
+          <h2>12 Ad Pixels &amp; IDs</h2>
+          <p>Instantly extracts active IDs for Meta, TikTok, GA4, GTM, Pinterest, Snapchat, Clarity, Klaviyo, Triple Whale, Northbeam, Elevar, and Postscript.</p>
+        </div>
+        <div class="card">
+          <h2>20+ Shopify Apps</h2>
+          <p>Spots leading review, subscription, upsell, loyalty, helpdesk, and SMS tools including Judge.me, Loox, Recharge, Gorgias, Attentive, and Smile.io.</p>
+        </div>
+        <div class="card">
+          <h2>Privacy-First MV3</h2>
+          <p>Runs 100% client-side only when clicked. Uses minimal permissions (<code>activeTab</code>, <code>scripting</code>, <code>storage</code>) with zero background tracking.</p>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing">
+        <h2>Simple Pricing</h2>
+        <div class="grid">
+          <div class="card">
+            <h2>Free</h2>
+            <div class="price-tag">$0</div>
+            <ul>
+              <li>Unlimited storefront, theme &amp; Shopify Plus checks</li>
+              <li>Full pixel &amp; app detection with extracted IDs</li>
+              <li>Catalog stats + CSV export up to 25 product rows</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>ShopPulse Pro</h2>
+            <div class="price-tag">$15 / month</div>
+            <ul>
+              <li>Unlimited catalog CSV exports (250+ products / all variants)</li>
+              <li>Full structured JSON catalog &amp; metadata exports</li>
+              <li>1-click Markdown competitor teardown brief</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>Support: <a href="mailto:ferrazmichel@gmail.com">ferrazmichel@gmail.com</a></span>
+        <span><a href="./privacy.html">Privacy Policy</a></span>
+      </footer>
+    </main>
+  </body>
+</html>
